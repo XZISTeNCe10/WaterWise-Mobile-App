@@ -1,0 +1,182 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:elevation="4dp"
+            app:title="WaterWise"
+            app:titleTextColor="@android:color/black"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/appLogo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/wwlogo"
+                    android:contentDescription="App Logo"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_above="@+id/bottomNavBar"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:columnCount="2"
+                    android:rowCount="3">
+
+                    <ImageButton
+                        android:id="@+id/gamesButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Games"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_games" />
+
+                    <ImageButton
+                        android:id="@+id/surveyButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Survey"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_survey" />
+
+                    <ImageButton
+                        android:id="@+id/reportButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Report"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_report" />
+
+                    <ImageButton
+                        android:id="@+id/forumButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Forum"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_forum" />
+
+                    <ImageButton
+                        android:id="@+id/kylButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Know Your Locality"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_kyl" />
+
+                    <ImageButton
+                        android:id="@+id/triviaButton"
+                        android:layout_width="140dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="16dp"
+                        android:background="@drawable/button_border"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="Trivia"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/ic_trivia" />
+                </GridLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/bottomNavBar"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:elevation="8dp"
+            android:padding="8dp"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/profileButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_profilee"
+                android:contentDescription="Profile"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_border" />
+
+            <ImageButton
+                android:id="@+id/marketplaceButton"
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/market"
+                android:contentDescription="Marketplace"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_border" />
+
+            <ImageButton
+                android:id="@+id/settingsButton"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_margin="16dp"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_settings"
+                android:contentDescription="Settings"
+                android:scaleType="centerInside"
+                android:background="@drawable/button_border" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"/>
+</androidx.drawerlayout.widget.DrawerLayout>

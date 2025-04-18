@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F0EF"
+    tools:context=".Market">
+
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Eco Sphere"
+        android:textColor="#3871c1"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/namedisp"
+        android:textSize="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="75dp">
+
+    </TextView>
+
+    <!-- Scrollable content section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_name"
+        android:layout_marginTop="38dp"
+        android:layout_above="@id/bottom_nav">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F2F0EF">
+
+            <!-- Search View -->
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@android:color/white"
+                android:queryHint="Search Products"
+                android:iconifiedByDefault="false"
+                app:queryBackground="@android:color/transparent"
+                android:padding="12dp"
+                android:elevation="8dp"
+                android:translationZ="4dp"
+                android:textColorHint="#B0BEC5"
+                android:textColor="#212121" />
+
+            <!-- Spotlight Section -->
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="210dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:background="@color/white">
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sustainable Selections"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="25dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/spt_one"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/shower" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="150dp"
+                android:id="@+id/spt_two"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/waterleak" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="280dp"
+                android:id="@+id/spt_three"
+                android:layout_marginTop="190dp"
+                android:src="@drawable/rainwater_filter" />
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="45dp"
+                android:text="Air Oxy 3"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="140dp"
+                android:text="Water Leak Sensor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
+                android:layout_marginLeft="288dp"
+                android:text="Rainwater filter"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <!-- Tiffin Services Section -->
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="400dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/shower"
+                android:id="@+id/one" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_one_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="Air Oxy 3 ShowerHead" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_one_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="427dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.2(100)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_one_location"
+                android:layout_marginTop="445dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="Reduces wastage by 50%" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_one_description"
+                android:layout_marginTop="460dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="Echo365" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="433dp"
+                android:layout_marginLeft="370dp" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="540dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/waterleak"
+                android:id="@+id/two" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="550dp"
+                android:id="@+id/tiffin_two_name"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="Water Leak Sensor" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="567dp"
+                android:id="@+id/tiffin_two_rating"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.9(300)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="585dp"
+                android:id="@+id/tiffin_two_location"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="ABC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="600dp"
+                android:id="@+id/tiffin_two_description"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="XYZ" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="575dp"
+                android:layout_marginLeft="350dp" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/four"
+                android:layout_marginTop="680dp"
+                android:src="@drawable/shower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_four_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="690dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="ABC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_four_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="707dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.4(10)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_four_location"
+                android:layout_marginTop="725dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="ABC" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_four_description"
+                android:layout_marginTop="740dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="XYZ" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="717dp"
+                android:layout_marginLeft="350dp" />
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/south"
+                android:layout_marginTop="820dp"
+                android:src="@drawable/shower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_five_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="830dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="xyz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_five_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="847dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.1(50)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_five_location"
+                android:layout_marginTop="865dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="abc" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_five_description"
+                android:layout_marginTop="880dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="apqr" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="859dp"
+                android:layout_marginLeft="350dp"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/jyoti"
+                android:layout_marginTop="960dp"
+                android:src="@drawable/rainwater_filter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_six_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="970dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="Rainwater Filter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_six_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="987dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.0(500)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_six_location"
+                android:layout_marginTop="1005dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="Helps Recycling water" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_six_description"
+                android:layout_marginTop="1020dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="XYZ
+" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="1001dp"
+                android:layout_marginLeft="350dp"/>
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/maa"
+                android:layout_marginTop="1100dp"
+                android:src="@drawable/waterleak" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_seven_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1110dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="yrs" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_seven_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1127dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.8(360)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_seven_location"
+                android:layout_marginTop="1145dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="ast" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_seven_description"
+                android:layout_marginTop="1160dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="uvw" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="1143dp"
+                android:layout_marginLeft="350dp"/>
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="40dp"
+                android:id="@+id/uran"
+                android:layout_marginTop="1240dp"
+                android:src="@drawable/shower" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_eight_name"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1250dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="pop" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tiffin_eight_rating"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1267dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="180dp"
+                android:text="4.4(300)" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_eight_location"
+                android:layout_marginTop="1285dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="tot" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tiffin_eight_description"
+                android:layout_marginTop="1300dp"
+                android:textSize="17sp"
+                android:layout_marginLeft="180dp"
+                android:text="lol" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/like_img"
+                android:layout_marginTop="1285dp"
+                android:layout_marginLeft="350dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <!-- Fixed bottom navigation bar -->
+    <LinearLayout
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="Profile"
+            android:id="@+id/nav_profile"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="Explore"
+            android:id="@+id/nav_explore"
+            android:background="?attr/selectableItemBackground" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:contentDescription="Address"
+            android:id="@+id/nav_address"
+            android:background="?attr/selectableItemBackground" />
+    </LinearLayout>
+
+</RelativeLayout>

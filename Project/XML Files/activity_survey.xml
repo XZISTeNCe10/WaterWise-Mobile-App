@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bgsurvey">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:text="My Water Survey"
+            android:textSize="28sp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:background="#0684BD"
+            android:padding="20dp"
+            android:fontFamily="sans-serif-black" />
+
+        <!-- Questions Start Here -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <!-- Question 1 -->
+            <TextView
+                android:text="1. How many liters of water do you typically use while showering each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q1_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 2 -->
+            <TextView
+                android:text="2. How many liters of water do you use with your washing machine each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q2_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 3 -->
+            <TextView
+                android:text="3. How many liters of water do you use for cooking daily?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q3_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 4 -->
+            <TextView
+                android:text="4. How many liters of water do you drink each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q4_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 5 -->
+            <TextView
+                android:text="5. How many liters of water do you typically use for house cleaning (mopping etc) each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q5_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 6 -->
+            <TextView
+                android:text="6. How many liters of water do you typically use while gardening each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q6_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 7 -->
+            <TextView
+                android:text="7. How many liters of water do you typically use while dish washing each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q7_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 8 -->
+            <TextView
+                android:text="8. How many liters of water do you typically use while car washing each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q8_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 9 -->
+            <TextView
+                android:text="9. How many liters of water do you typically use for sanitation purposes each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q9_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+            <!-- Question 10 -->
+            <TextView
+                android:text="10. How many liters of water do you typically use for other activities each day?"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/q10_input"
+                android:hint="Enter liters"
+                android:textColorHint="#808080"
+                android:textColor="#0F0C0C"
+                android:inputType="number"
+                android:background="@drawable/rounded_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:text="Submit Survey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0684BD"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:onClick="submitSurvey"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#0F0C0C"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>
